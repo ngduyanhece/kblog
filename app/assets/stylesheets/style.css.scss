@@ -1,0 +1,83 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/*UNIVERSAL*/
+h1, h2, h3 {
+  list-style: 1.5;
+}
+h1 {
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+p {
+  font-weight: 1.2em;
+  line-height: 1.7em;
+  padding: 5px;
+}
+/*NAVIGATION*/
+.navbar {
+	background-color: #242424;
+  border-bottom: 1px solid #b9b9b9;
+}
+.navbar a {
+  color: #ccc  !important;
+}
+.navbar a:hover {
+  color: #fff !important;
+  background-color: #646464 !important;
+}
+
+.section-welcome {
+  text-align: center;;
+}
+/*LOGO*/
+#logo {
+  float: left;
+  font-size: 1.8em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+#logo:hover {
+  color: tomato !important;
+  text-decoration: none;
+}
+/*FOOTER*/
+.name {
+  float: left;
+}
+footer {
+  margin-top: 50px;
+  padding: 10px;
+  border-top: 3px solid #eaeaea;
+  color: #777;
+}
+footer a {
+  color: #999;
+}
+footer a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
