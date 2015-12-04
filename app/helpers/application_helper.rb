@@ -5,4 +5,11 @@ module ApplicationHelper
     return base_title if page_title.empty?
     page_title + " | " + base_title
   end
+  #return the gravatar for a specific email 
+  def gravatar_for (user)
+  	email = user.email.downcase 
+  	id = Digest::MD5::hexdigest(email)
+  	url = "https://secure.gravatar.com/avatar/#{id}"
+  	image_tag url, alt: user.name, class: "gravatar"
+  end
 end

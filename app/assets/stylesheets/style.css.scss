@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 /*UNIVERSAL*/
+* {
+  box-sizing: border-box;
+}
 h1, h2, h3 {
   list-style: 1.5;
 }
@@ -80,4 +83,59 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+/*DEBUG PARAMS*/
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+}
+/*SIDE BAR*/
+/*Image for the gravatr*/
+.gravatar {
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.user-info {
+  margin-top: 5px;
+}
+aside section {
+  padding: 10px 0;
+  margin-top: 10px;
+}
+aside h1 {
+  font-size: 1.4em;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+/*FORM*/
+input, textarea, select, label {
+  display: block;
+  border: 2px solid #bbb;
+  width: 70%;
+  margin-bottom: 15px;
+  margin-left: 20%;
+}
+label {
+  border: none;
+}
+input {
+  height: auto !important;
+}
+/*ERRORS*/
+.error_messages {
+  margin-top: 70px;
+  color: #f00;
+}
+.error_messages ul {
+  margin: 0 auto;
+  text-align: left;
+}
+/*ALERT*/
+.alert-messages {
+  margin-top: 80px;
+  font-size: 1.6em;
+  text-align: center;
 }
