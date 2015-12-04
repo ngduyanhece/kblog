@@ -8,6 +8,8 @@ class UserSignupTest < ActionDispatch::IntegrationTest
     after_count = User.count
     assert_equal before_count, after_count
     assert_template 'users/new'
+    assert_select '.error_messages'
+    assert_select '.alert'
   end
 
   test "valid signup information" do 
@@ -18,6 +20,7 @@ class UserSignupTest < ActionDispatch::IntegrationTest
     after_count = User.count
     assert_not_equal before_count, after_count
     assert_template 'users/show'
+    assert !flash.nil?
   end
 
 end
