@@ -55,4 +55,8 @@ class UserTest < ActiveSupport::TestCase
     @user.password_confirmation = "a"*5
     assert !@user.valid?, "password should be at least 6 characters"
   end
+
+  test "authenticated? should return false for a user with nil digest" do 
+    assert !@user.authenticated?('')
+  end
 end

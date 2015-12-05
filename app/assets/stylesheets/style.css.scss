@@ -114,9 +114,15 @@ aside h1 {
 input, textarea, select, label {
   display: block;
   border: 2px solid #bbb;
-  width: 70%;
+  width: 50%;
   margin-bottom: 15px;
-  margin-left: 20%;
+  
+}
+input[type="submit"] {
+  width: 100%;
+}
+.checkbox {
+  margin-left: 15px;
 }
 label {
   border: none;

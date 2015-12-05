@@ -20,6 +20,7 @@ class UserSignupTest < ActionDispatch::IntegrationTest
     after_count = User.count
     assert_not_equal before_count, after_count
     assert_template 'users/show'
+    assert is_logged_in?
     assert !flash.nil?
   end
 
