@@ -145,3 +145,13 @@ input {
   font-size: 1.6em;
   text-align: center;
 }
+/*USER INDEX*/
+.users {
+  list-style-type: none;
+  margin: 0;
+}
+.users li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 2px solid  #b9b9b9;
+}
