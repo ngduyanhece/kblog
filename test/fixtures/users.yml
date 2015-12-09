@@ -8,8 +8,9 @@ kevin:
   name: kevin nguyen 
   email: kevinnguyen@gmail.com
   password_digest: <%= User.digest('password') %>
-  admin: true 
-
+  admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %> 
 geek:
   name: geek nguyen 
   email: geeknguyen@gmail.com
@@ -19,4 +20,6 @@ user_<%= n %>:
   name: <%= "User #{n}" %>
   email: <%= "user-#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
 <% end %>
